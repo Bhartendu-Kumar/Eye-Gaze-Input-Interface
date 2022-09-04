@@ -1,5 +1,5 @@
 # Eye-Gaze-Input-Interface
-
+![logo](mouse-eyetracking-tracking-heatmap.jpg)
 Project has following directories:
 ```
 .
