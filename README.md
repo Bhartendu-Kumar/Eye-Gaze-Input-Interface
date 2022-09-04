@@ -52,3 +52,38 @@ Code base is moduler with each module having seperate concerns:<br>
 - `main.py`: Script, which is the starting point for the app.
 - `benchmark.py`: Script used to benchmark the models.
 - `download_models.sh`: Bash script to download all required models from model zoo automatically.
+
+
+== Prerequisites
+
+To run the application in this tutorial, the OpenVINO™ toolkit and its dependencies must already be installed and verified using the included demos. Installation instructions may be found at: https://software.intel.com/en-us/articles/OpenVINO-Install-Linux or https://github.com/udacity/nd131-openvino-fundamentals-project-starter/blob/master/linux-setup.md
+
+The below steps are tested on Ubuntu 16.04:
+
+[source,bash]
+----
+# Install OpenVino
+wget http://registrationcenter-download.intel.com/akdlm/irc_nas/16612/l_openvino_toolkit_p_2020.2.120.tgz
+tar -xvf l_openvino_toolkit_p_2020.2.120.tgz
+cd l_openvino_toolkit_p_2020.2.120
+sed -i 's/decline/accept/g' silent.cfg
+sudo ./install.sh -s silent.cfg
+
+# System dep
+sudo apt update
+sudo apt-get install python3-pip
+pip3 install numpy
+pip3 install paho-mqtt
+sudo apt install libzmq3-dev libkrb5-dev
+sudo apt install ffmpeg
+sudo apt-get install cmake
+sudo apt-get install python3-venv
+
+# Create a Virtual env
+python3 -m venv openvino-env
+source openvino-env/bin/activate
+
+# Project dep
+pip3 install -r requirements.txt
+
+----
