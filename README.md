@@ -20,6 +20,9 @@ Project has following directories:
 |--requirements.txt
 |--download_models.sh
 ```
+# Architecture
+Below image demonstrates pipeline of code:<br>
+![pipeline](pipeline.png)
 
 Models used for making inference are IRs from OpenVino Model Zoo.
 These can be found here:
