@@ -1,5 +1,6 @@
 # Eye-Gaze-Input-Interface
-![logo](mouse-eyetracking-tracking-heatmap.jpg)
+![logo](collision.png)
+
 Project has following directories:
 ```
 .
@@ -23,8 +24,10 @@ Project has following directories:
 # Architecture
 Below image demonstrates pipeline of code:<br>
 ![pipeline](pipeline.png)
+![idea](images.jpeg)
 
 Models used for making inference are IRs from OpenVino Model Zoo.
+![Models]()
 These can be found here:
 * [face-detection-adas-0001](https://docs.openvinotoolkit.org/latest/_models_intel_face_detection_adas_0001_description_face_detection_adas_0001.html)
 * [landmarks-regression-retail-0009](https://docs.openvinotoolkit.org/latest/_models_intel_landmarks_regression_retail_0009_description_landmarks_regression_retail_0009.html)
@@ -37,6 +40,7 @@ OpenVino's [Model Downloader](https://docs.openvinotoolkit.org/latest/_tools_dow
 
 
 ## Demo
+![demo](1.png)
 After installing all the required dependencies and model files with correct precisions, run following command for a quick demo:
 ```
 python3 src/main.py -t video -i media/demo.mp4
