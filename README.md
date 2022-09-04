@@ -60,18 +60,18 @@ To run the application in this tutorial, the OpenVINO™ toolkit and its depende
 
 The below steps are tested on Ubuntu 16.04:
 
-
+```
 
 ### 1. Install OpenVino
-```
+
 wget http://registrationcenter-download.intel.com/akdlm/irc_nas/16612/l_openvino_toolkit_p_2020.2.120.tgz
 tar -xvf l_openvino_toolkit_p_2020.2.120.tgz
 cd l_openvino_toolkit_p_2020.2.120
 sed -i 's/decline/accept/g' silent.cfg
 sudo ./install.sh -s silent.cfg
-```
+
 ### 2.System dep
-```
+
 sudo apt update
 sudo apt-get install python3-pip
 pip3 install numpy
@@ -80,14 +80,14 @@ sudo apt install libzmq3-dev libkrb5-dev
 sudo apt install ffmpeg
 sudo apt-get install cmake
 sudo apt-get install python3-venv
-```
+
 ### 3.Create a Virtual env
-```
+
 python3 -m venv openvino-env
 source openvino-env/bin/activate
-```
+
 ### 4.Project dep
-```
+
 pip3 install -r requirements.txt
 ```
 ----
