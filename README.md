@@ -40,7 +40,7 @@ OpenVino's [Model Downloader](https://docs.openvinotoolkit.org/latest/_tools_dow
 
 
 ## Demo
-![demo](1.png)
+![working](1.png)
 After installing all the required dependencies and model files with correct precisions, run following command for a quick demo:
 ```
 python3 src/main.py -t video -i media/demo.mp4
